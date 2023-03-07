@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Bootstrap CSS -->
+<!--     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+          rel="stylesheet" 
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
+          crossorigin="anonymous"> -->
+
+        <!-- Fuente de google:
+               1. buscamos la fuentes, escogemos los tamaños, copiamos el link que se genera y lo pegamos aca.
+               2. copiamos el nombre de la fuente que aparece abajito del link y lo pegamos en custom.scss
+        -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./scss/reducido.min.css">
+
+</head>
+
+<body class="bg-secondary">
+    <!-- Main representa el contenido principal del 'body' en una pagina web -->
+    <!-- Para alinear 1ero se debe especificar el alto, no tiene sentido alinear cuando el contenido es mas grande que el contenedor 
+         Viewport [ vh-100 ] : para que el contenedor ocupe todo el alto de la ventana, si no lo tiene ocupa solo el contenido que posee
+    -->
+    <main class="container-md d-flex justify-content-center align-items-center alto-100"> <!-- centra el row que es el que contiene todas las cards -->
+        <!-- Fila principal -->
+        <div class="row justify-content-center"> <!-- centra los cards que son los que estan dentro del row-->
+            <!-- Columna izquierda -->
+            <div class="col-12 col-sm-12 col-lg-9">
+                <!-- Esta fila ocupa dos filas pero es solo una, ocupa 24 grids ocupa aparentando ser 2 filas  -->
+                <div class="row">
+
+
+                    <div class="col-12 col-sm-8 p-3">
+
+                        <!-- TARJETA -->
+                        <article class="card h-100 rounded-3 bg-primary text-white fondo-card shadow-kevin p-3">
+                            <div class="card-body">
+                                <div class="d-flex align-items-center mb-3">
+                                    <img src="./images/image-daniel.jpg" alt="" class="foto border border-secondary border-2 rounded-circle">
+                                    <div class="ps-4"><!-- ps-lg-3  para que solo se aplique con el tamaño lg-->
+                                        <h6 class="m-0 h6">Daniel Clifford</h6>
+                                        <p class="m-0 fs-6 text-info">Lorem, ipsum.</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <p class="fs-5 lh-sm" >Lorem ipsum dolor sit, amet consectetur adipisic elit. Fugit quaerat exercitationem ducimus iste, suscipit iusto sit, ducimus iste.</p>
+                                    <p class="fs-6 lh-sm text-info mb-0">" Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit quaerat exercitationem ducimus iste, suscipit iusto sit, qui officiis aut velit vel illo iure similique illum temporibus. Est recusandae blanditiis vero. Est recusandae blanditiis vero. "</p>
+                                </div>
+                            </div>
+                        </article>
+                    
+                    </div>
+                    
+                    <div class="col-12 col-sm-4 p-3">
+
+                        <!-- TARJETA -->
+                        <article class="card h-100 rounded-3 bg-success text-white shadow-kevin p-3">
+                            <div class="card-body">
+                                <div class="d-flex align-items-center mb-3">
+                                    <img src="./images/image-jonathan.jpg" alt="" class="foto border border-secondary border-2 rounded-circle">
+                                    <div class="ps-4"><!-- ps-lg-3  para que solo se aplique con el tamaño lg-->
+                                        <h6 class="m-0 h6">Jhonatan Walter</h6>
+                                        <p class="m-0 fs-6 text-info">Lorem, ipsum.</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <p class="fs-5 lh-sm" >Lorem ipsum dolor sit, amet consectetur adipisic elit.</p>
+                                    <p class="fs-6 lh-sm text-info mb-0">" Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit quaerat exercitationem. "</p>
+                                </div>
+                            </div>
+                        </article>
+
+                    </div>
+
+                    <div class="col-12 col-sm-4 p-3">
+
+                        <!-- TARJETA -->
+                        <article class="card h-100 rounded-3 shadow-kevin p-3">
+                            <div class="card-body">
+                                <div class="d-flex align-items-center mb-3">
+                                    <img src="./images/image-jeanette.jpg" alt="" class="foto border border-secondary border-2 rounded-circle">
+                                    <div class="ps-4"><!-- ps-lg-3  para que solo se aplique con el tamaño lg-->
+                                        <h6 class="m-0 h6">Jeanette Harmon</h6>
+                                        <p class="m-0 fs-6 text-info">Lorem, ipsum.</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <p class="fs-5 lh-sm" >Lorem ipsum dolor sit, amet consectetur adipisic elit.</p>
+                                    <p class="fs-6 lh-sm text-info mb-0">" Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit quaerat exercitationem. "</p>
+                                </div>
+                            </div>
+                        </article>
+
+                    </div>
+
+                    <div class="col-12 col-sm-8 p-3">
+
+                        <!-- TARJETA -->
+                        <article class="card h-100 rounded-3 bg-dark text-white shadow-kevin p-3">
+                            <div class="card-body">
+                                <div class="d-flex align-items-center mb-3">
+                                    <img src="./images/image-patrick.jpg" alt="" class="foto border border-secondary border-2 rounded-circle">
+                                    <div class="ps-4"><!-- ps-lg-3  para que solo se aplique con el tamaño lg-->
+                                        <h6 class="m-0 h6">Patrick Abrams</h6>
+                                        <p class="m-0 fs-6 text-info">Lorem, ipsum.</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <p class="fs-5 lh-sm" >Lorem ipsum dolor sit, amet consectetur adipisic elit. Fugit quaerat exercitationem ducimus iste, suscipit iusto sit, ducimus iste.</p>
+                                    <p class="fs-6 lh-sm text-info mb-0">" Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit quaerat exercitationem ducimus iste, suscipit iusto sit, qui officiis aut velit vel illo iure similique illum temporibus. Est recusandae blanditiis vero. Est recusandae blanditiis vero. "</p>
+                                </div>
+                            </div>
+                        </article>
+
+                    </div>
+
+
+                </div>
+            </div>
+
+            <!-- Columna derecha -->
+            <div class="col-12 col-sm-12 col-lg-3 p-3">
+
+                <!-- TARJETA -->
+                <article class="card h-100 rounded-3 shadow-kevin p-3">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="./images/image-kira.jpg" alt="" class="foto border border-secondary border-2 rounded-circle">
+                            <div class="ps-4"><!-- ps-lg-3  para que solo se aplique con el tamaño lg-->
+                                <h6 class="m-0 h6">Kira Whittle</h6>
+                                <p class="m-0 fs-6 text-info">Lorem, ipsum.</p>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="fs-5 lh-sm" >Lorem ipsum dolor sit, amet consectetur adipisic elit !!.</p>
+                            <p class="fs-6 lh-sm text-info mb-0">" Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore aliquam blanditiis quasi, sint natus voluptas quos praesentium, doloremque minima vero corrupti? Laboriosam, optio consequuntur expedita est adipisci voluptatum a iste. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa incidunt cupiditate quis quam laudantium officiis pariatur, nihil, voluptas alias, labore accusantium tempora eveniet quo quibusdam maiores. Atque magnam iste dolor! "</p>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+
+
+            <!-- Columna -->
+            <div class="col-12 col-sm-5 col-lg-4 p-3">
+
+                <!-- TARJETA -->
+                <article class="card h-100 bg-light rounded-3 shadow-kevin p-3">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center mb-3">
+                            <a href="https://github.com/paledot01"><img src="./images/logo_paledot01.png" alt="" class="logo border border-dark border-2 rounded-circle"></a>
+                            
+                            <div class="ps-4"><!-- ps-lg-3  para que solo se aplique con el tamaño lg-->
+                                <h6 class="m-0 h6"><a href="https://github.com/paledot01" class="text-reset">paledot01</a></h6>
+                                <p class="m-0 fs-6 text-info">Basilio.K</p>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="fs-6 lh-sm mb-0">Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+                                >Frontend Mentor</a></p>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+
+
+    </main>
+
+    
+</body>
+
+</html>

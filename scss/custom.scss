@@ -1,0 +1,72 @@
+
+// fuente de texto
+$font-family-sans-serif: 'Barlow Semi Condensed', sans-serif;
+
+// tamaño de fuentes (por default 1)
+$font-size-base: 0.9rem;
+
+// colores 
+
+$kevin_morado:#733FC8;
+$kevin_gris:#49556B;
+$kevin_azul_oscurazo:#18202D;
+$kevin_azul_clarazo:#ecf2f8;
+$kevin_text_gris: #a5a5a5;
+$kevin_verde_clarazo: #f5fef6;
+
+$primary:  $kevin_morado !default;
+$success: $kevin_gris !default;
+$dark: $kevin_azul_oscurazo !default;
+$secondary: $kevin_azul_clarazo !default;
+$info: $kevin_text_gris !default;
+$light: $kevin_verde_clarazo !default;
+
+// esto modifica la unidad de medida utilizada para crear los margin y padding
+// la medida del 'spacer' original es de '1rem'
+$spacer: 0.8rem;
+
+// css personalizado
+@media (min-width: 992px) {
+    .alto-100 {
+      height: 100vh;
+    }
+}
+
+// tamaño de las imagenes
+.foto{
+    width: 35px;
+}
+.logo {
+  width: 50px;
+}
+
+// efecto hover a las CARDS
+$black:#000;
+.shadow-kevin{
+  box-shadow: 0 0 0.5rem rgba($black, .15);
+  transition: 100ms;
+}
+
+.shadow-kevin:hover {
+  box-shadow: 0 0rem 3rem rgba($black, .175);
+  //transform: scale(1.01);
+  transition: 150ms;
+}
+
+// -----------
+.fondo-card{
+    background-image: url('../images/bg-pattern-quotation.svg');
+    background-repeat: no-repeat;
+    background-position: 85% top;
+}
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 960px,
+  xxl: 960px
+);
+
+
+@import "../node_modules/bootstrap/scss/bootstrap";
