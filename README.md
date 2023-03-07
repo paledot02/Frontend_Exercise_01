@@ -1,6 +1,6 @@
 
 #### :eye: Live Preview :
-https://paledot02.github.io/Exercises_Bootstrap_01/
+https://paledot02.github.io/Frontend_Exercise_01/
 
 ![][img_1]
 
